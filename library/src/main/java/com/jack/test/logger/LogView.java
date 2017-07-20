@@ -1,13 +1,14 @@
-package com.jack.jacklogger.core;
+package com.jack.test.logger;
 
 import android.app.Activity;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import com.jack.jacklogger.core.Log.LogNode;
+import com.jack.test.logger.Log.LogNode;
 
 /**
  * 2017/7/18.
@@ -80,6 +81,7 @@ public class LogView extends TextView implements LogNode {
         SimpleDateFormat formatter = new SimpleDateFormat("HH:mm:ss");
         Date curDate = new Date(System.currentTimeMillis());
         String str = formatter.format(curDate);
+        outputBuilder.append(priorityStr+" ");
         outputBuilder.append(str);
         outputBuilder.append(" ");
         outputBuilder.append(msg);

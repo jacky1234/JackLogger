@@ -1,6 +1,6 @@
-package com.jack.jacklogger.core;
+package com.jack.test.logger;
 
-import com.jack.jacklogger.core.Log.LogNode;
+import com.jack.test.logger.Log.LogNode;
 
 /**
  * 2017/7/18.

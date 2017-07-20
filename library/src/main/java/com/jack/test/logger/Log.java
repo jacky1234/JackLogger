@@ -1,4 +1,4 @@
-package com.jack.jacklogger.core;
+package com.jack.test.logger;
 
 /**
  * 2017/7/18.

@@ -3,8 +3,9 @@ package com.jack.jacklogger;
 import android.os.Bundle;
 import android.view.View;
 
-import com.jack.jacklogger.core.Log;
-import com.jack.jacklogger.core.LogFragment;
+import com.jack.test.logger.LogFragment;
+import com.jack.test.logger.Log;
+
 
 public class MainActivity extends BaseActivity {
 

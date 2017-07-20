@@ -1,4 +1,4 @@
-package com.jack.jacklogger.core;
+package com.jack.test.logger;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;

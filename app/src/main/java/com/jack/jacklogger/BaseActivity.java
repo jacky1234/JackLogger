@@ -2,9 +2,10 @@ package com.jack.jacklogger;
 
 import android.support.v7.app.AppCompatActivity;
 
-import com.jack.jacklogger.core.Log;
-import com.jack.jacklogger.core.LogCatWrapper;
-import com.jack.jacklogger.core.LogFragment;
+import com.jack.test.logger.Log;
+import com.jack.test.logger.LogCatWrapper;
+import com.jack.test.logger.LogFragment;
+
 
 /**
  * 2017/7/18.
