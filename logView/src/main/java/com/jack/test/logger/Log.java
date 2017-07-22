@@ -7,7 +7,7 @@ package com.jack.test.logger;
  * qq:[847564732]
  *
  * @author yangjianfei
- * @description:输出内容到 LogView 中
+ * 输出内容到 LogView 中
  */
 
 public class Log {

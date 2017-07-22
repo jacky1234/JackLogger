@@ -19,7 +19,6 @@ import android.widget.ScrollView;
  * qq:[847564732]
  *
  * @author yangjianfei
- * @description:
  */
 
 public class LogFragment extends Fragment {

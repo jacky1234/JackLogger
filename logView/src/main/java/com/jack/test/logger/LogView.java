@@ -17,7 +17,6 @@ import com.jack.test.logger.Log.LogNode;
  * qq:[847564732]
  *
  * @author yangjianfei
- * @description:
  */
 
 public class LogView extends TextView implements LogNode {

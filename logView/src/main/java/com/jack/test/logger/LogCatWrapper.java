@@ -9,7 +9,6 @@ import com.jack.test.logger.Log.LogNode;
  * qq:[847564732]
  *
  * @author yangjianfei
- * @description:
  */
 
 public class LogCatWrapper implements LogNode {
