@@ -3,4 +3,4 @@ Android标准的Api中Log.i打印输出的控制台。本示例基于装饰模�
 
 
 ## 本示例库已经支持jcenter的引入
-`compile 'com.jackyjf.main.test:logView:1.3.0'`
+`compile 'com.jackyang.main.test:logView:1.4.0'`
