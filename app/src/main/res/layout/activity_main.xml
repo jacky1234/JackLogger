@@ -19,6 +19,41 @@
         android:layout_height="wrap_content"
         android:text="stop!" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/b_clearLog"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="clearLog" />
+
+        <Button
+            android:id="@+id/b_up"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="up" />
+
+
+        <Button
+            android:id="@+id/b_down"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="down" />
+
+        <Button
+            android:id="@+id/b_enableAutoScroll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="enableAutoScroll" />
+    </LinearLayout>
+
     <FrameLayout
         android:id="@id/framelog"
         android:layout_width="match_parent"

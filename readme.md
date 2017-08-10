@@ -5,6 +5,13 @@ Android标准的Api中Log.i打印输出的控制台。本示例基于装饰模�
 ## 本示例库已经支持jcenter的引入
 `compile 'com.jackyang.main.test:logView:1.4.0'`
 
+## 功能
+1. 双击清除log
+2. 滑动最上，最下
+3. 自动滑动
+
+
+
 ## 使用
 1. in the layout add FrameLayout with id framelog.
 ```xml

@@ -7,13 +7,21 @@ package com.jack.test.logger;
  * qq:[847564732]
  *
  * @author yangjianfei
- * 输出内容到 LogView 中
+ *         输出内容到 LogView 中
  */
 
 public class Log {
 
     public interface LogNode {
         void println(int priority, String tag, String msg, Throwable tr);
+
+        void clearLog();
+
+        void up();
+
+        void down();
+
+        void enableAutoScroll();
     }
 
     public static final int DEBUG = android.util.Log.DEBUG;
@@ -76,4 +84,21 @@ public class Log {
     public static void println(int priority, String tag, String msg) {
         println(priority, tag, msg, null);
     }
+
+    public static void up() {
+        mLogNode.up();
+    }
+
+    public static void down() {
+        mLogNode.down();
+    }
+
+    public static void clearLog() {
+        mLogNode.clearLog();
+    }
+
+    public static void enableAutoScroll() {
+        mLogNode.enableAutoScroll();
+    }
+
 }

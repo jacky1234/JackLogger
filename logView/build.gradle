@@ -4,14 +4,14 @@ def siteUrl = 'https://github.com/jacky1234/JackLogger'   // 项目的主页
 def gitUrl = 'git@github.com:jacky1234/JackLogger.git'   // Git仓库的url
 def lib_desc = 'extent function for Logging on View'
 def version_desc = lib_desc;
-def mavenVersionCode =5
+def mavenVersionCode =7
 
 //发布到组织名称名字，必须填写
-group = 'com.jackyang.main.test'
+group = 'com.jackyjf.main.test'
 //发布到JCenter上的项目名字，必须填写
 def libName = "JackLogger"
 // 版本号，下次更新是只需要更改版本号即可
-version = "1.5.0"
+version = "1.7.0"
 
 android {
     compileSdkVersion 25

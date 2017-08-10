@@ -40,4 +40,26 @@ public class LogCatWrapper implements LogNode {
             mNext.println(priority, tag, msg, tr);
         }
     }
+
+    @Override
+    public void clearLog() {
+        mNext.clearLog();
+    }
+
+    @Override
+    public void up() {
+        mNext.up();
+    }
+
+    @Override
+    public void down() {
+        mNext.down();
+    }
+
+    @Override
+    public void enableAutoScroll() {
+        mNext.enableAutoScroll();
+    }
+
+
 }

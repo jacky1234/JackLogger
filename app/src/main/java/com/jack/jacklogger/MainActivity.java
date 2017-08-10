@@ -3,8 +3,8 @@ package com.jack.jacklogger;
 import android.os.Bundle;
 import android.view.View;
 
-import com.jack.test.logger.LogFragment;
 import com.jack.test.logger.Log;
+import com.jack.test.logger.LogFragment;
 
 
 public class MainActivity extends BaseActivity {
@@ -38,6 +38,34 @@ public class MainActivity extends BaseActivity {
                 bStart = false;
             }
         });
+
+        findViewById(R.id.b_clearLog).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.clearLog();
+            }
+        });
+
+        findViewById(R.id.b_up).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.up();
+            }
+        });
+
+        findViewById(R.id.b_down).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.down();
+            }
+        });
+
+        findViewById(R.id.b_enableAutoScroll).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.enableAutoScroll();
+            }
+        });
     }
 
     private int i = 'a';
@@ -47,7 +75,7 @@ public class MainActivity extends BaseActivity {
         public void run() {
             while (bStart) {
                 try {
-                    Thread.sleep(300);
+                    Thread.sleep(100);
                     Log.d("MainActivity", (char) i + "");
                     i++;
 
