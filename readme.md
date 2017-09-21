@@ -28,7 +28,15 @@ final android.support.v4.app.FragmentTransaction transaction = getSupportFragmen
         transaction.replace(R.id.framelog, fragment);
 ```
 
-3. log
+3. When get focus inject LogView to LogWrapper
+```java
+LogFragment fragment = (LogFragment) getSupportFragmentManager().findFragmentById(R.id.framelog);
+LogCatWrapper logcat = new LogCatWrapper();
+logcat.setNext(fragment.getLogView());      //wait unit the fragment has getFocus
+Log.setLogNode(logcat);
+```
+
+4. use log
 ```java
 com.jack.test.logger.Logger.d(...)
 ```
